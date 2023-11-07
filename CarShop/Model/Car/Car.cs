@@ -70,9 +70,9 @@ namespace CarShop.Model.Car
             }
         }
 
+        public Car() { }
         public Car(string brand, string model, short ageProduction, int price)
         {
-            //this.id = id;
             this.brand = brand;
             this.model = model;
             this.ageProduction = ageProduction;

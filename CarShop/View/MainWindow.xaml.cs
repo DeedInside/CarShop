@@ -1,6 +1,5 @@
 ﻿using CarShop.DataContext;
 using CarShop.ViewModel;
-using CarShop.ViewModel.Command;
 using System.Windows;
 
 namespace CarShop
@@ -12,8 +11,6 @@ namespace CarShop
             InitializeComponent();
 
             this.DataContext = new MainVM();
-            ListCar.ItemsSource = CarLocator.Cars;
-            Groupbatton.DataContext = new MainWinCommand();
         }
     }
 }

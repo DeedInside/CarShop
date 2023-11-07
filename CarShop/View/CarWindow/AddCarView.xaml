@@ -10,25 +10,24 @@
         <StackPanel>
             <DockPanel Margin="0 5 5 5">
                 <TextBlock Text="Brand:   "/>
-                <TextBox Name="TextBrand"/>
+                <TextBox Text="{Binding Brand}"/>
             </DockPanel>
             <DockPanel Margin="0 0 5 5">
                 <TextBlock Text="Model:   "/>
-                <TextBox Name="TextModel"/>
+                <TextBox Text="{Binding Model}"/>
             </DockPanel>
             <DockPanel Margin="0 0 5 5">
                 <TextBlock Text="Age production:   "/>
-                <TextBox Name="TextAge"/>
+                <TextBox Text="{Binding AgeProduction}"/>
             </DockPanel>
             <DockPanel Margin="0 0 5 5">
                 <TextBlock Text="Price:   "/>
-                <TextBox Name="TextPrice"/>
+                <TextBox Text="{Binding Price}"/>
             </DockPanel>
             <StackPanel Name="GroupButton" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Content="add" HorizontalAlignment="Center" Margin="0 0 15 0"
-                        Click="AddCar"/>
-                <Button Content="back" HorizontalAlignment="Center"
-                Click="CloseWin"/>
+                        IsDefault="True" Click="AddCar"/>
+                <Button Content="back" IsCancel="True" HorizontalAlignment="Center"/>
             </StackPanel>
         </StackPanel>
     </Grid>
